@@ -1,0 +1,37 @@
+{
+  "name": "dsh-zh-cn",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DSH plugin: force every session and every model to think and answer in Simplified Chinese, permanently, until uninstalled. 全局中文模式——安装后对所有会话、所有模型（含自定义模型）永久生效，思考过程与回复一律用简体中文显示。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-zh-cn",
+    "zh-cn",
+    "chinese",
+    "language",
+    "system-prompt"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

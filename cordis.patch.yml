@@ -1,0 +1,6 @@
+# dsh-zh-cn bundle patch.
+# 一行 insert 即挂载 Host 半身；本插件没有浏览器半身。
+- insert:
+    - id: zh-cn
+      name: 'dsh-zh-cn'
+      config: {}
